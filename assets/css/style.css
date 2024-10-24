@@ -95,7 +95,7 @@ nav {
     object-fit: contain;
 }
 
-.overlay {
+.slider-title {
     position: absolute;
     top: 0;
     left: 0;
@@ -111,17 +111,22 @@ nav {
     vertical-align: middle;
 }
 
-.overlay h2 {
+.slider-title h2 {
     margin-top: 0;
     font-size: 36px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-.overlay q {
+.slider-title q {
     font-size: 18px;
     max-width: 70%;
 
+}
+.slider-title p{
+    font-size: 18px;
+    max-width: 70%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
 }
 
 
@@ -245,17 +250,19 @@ nav {
     overflow: hidden;
 }
 
-table {
+.table-container table {
+    text-align: center;
     width: 100%;
     border-collapse: collapse; 
 }
 
-th, td {
+.table-container th, td {
     border: 1px solid black;
     padding: 10px;
 }
 
-th {
+.table-container th {
+    text-align: center;
     background-color: #c3c2c2;
     font-weight: bold;
 }
@@ -572,6 +579,25 @@ textarea {
 
 
 
+
+
+
+
+/*             Partenaires et Sponsors      */
+
+
+
+.container .row-logo{
+    display: flex;
+    text-align: center;
+}
+
+
+.container .row-logo img {
+    width: 200px;    
+    height: 200px;  
+    object-fit: contain;  /* Conserve le ratio des images tout en les ajustant dans les dimensions */
+}
 
 
 /*            FOOTER                 */
