@@ -34,12 +34,162 @@
         <div class="slide">
             <img src="../assets/images/sliders/slider1.jpg" alt="Image de Slider">
             <div class="overlay">
-                <h2>Titre</h2>
-                <q>Phrase d'accroche</q>
+                <h2>Inscription</h2>
+                <q>Inscrivez-vous pour vivre une journée enrichissante en conseil et en découvertes financières.</q>
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="formInscription">
+                    <form action="">
+                            <fieldset>
+                                <legend>BILLETTERIE</legend>
+                                <div class="table-container-prix">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>TARIF</th>
+                                                <th>PRIX</th>
+                                                <th>QUANTITÉ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Adulte</td> 
+                                                <td id="prixadulte">50,00$</td>
+                                                <td>
+                                                    <select nombre="quantite">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </td>  
+                                            </tr>
+                                            <tr>
+                                                <td>Aîné(e)</td>
+                                                <td id="prixaine">45,00$</td>
+                                                <td><select nombre="quantite">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Étudiant(e)</td>
+                                                <td id="prixetudiant">40,00$</td>
+                                                <td><select nombre="quantite">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Entreprise (10 personnes)</td>
+                                                <td id="prixentreprise">450,00$</td>
+                                                <td><select nombre="quantite">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                            </td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                                </div>
+                                <div class="form-group-inscription">
+                                    <label for="soustotal">Sous-total</label>
+                                    <input type="text" name="soustotal" id="soustotal" disabled/>
+                                </div>
+                        
+                                <div class="form-group-inscription">
+                                    <label for="tps">TPS(5%)</label>
+                                    <input type="text" name="tps" id="tps"disabled/>
+                                </div>
+                        
+                                <div class="form-group-inscription">
+                                    <label for="tvq">TVQ(9,975%)</label>
+                                    <input type="text" name="tvq" id="tvq" disabled/>
+                                </div>
+                        
+                                <div class="form-group-inscription">
+                                    <label for="total">Total</label>
+                                    <input type="text" name="total" id="total"disabled/>
+                                </div>
+                        
+                                <div class="form-group-inscription">
+                                    <label for="codepromo">Code promo</label>
+                                    <input type="text" name="codepromo" id="codepromo" maxlength="7">
+                                </div>
+                                <div class="form-group-inscription">
+                                    <select name="methodePaiement" required>
+                                        <option value="" disabled selected>Méthode de paiement*</option>
+                                        <option value="credit">Crédit</option>
+                                        <option value="debit">Débit</option>
+                                        <option value="paypal">PayPal</option>
+                                    </select>
+                                </div>
+
+                            </fieldset>
+                        <fieldset>
+                            <legend>INFORMATIONS PERSONNELLES</legend>
+                            <div class="form-p">
+                                <input type="text" name="nom" placeholder="Nom*" required>
+                                <input type="text" name="prenom" placeholder="Prénom*" required>
+                            </div>
+                            <div class="form-p">
+                                <select name="sexe" required>
+                                    <option value="" disabled selected>Sexe*</option>
+                                    <option value="Feminin">Féminin</option>
+                                    <option value="Masculin">Masculin</option>
+                                    <option value="Autres">Autres</option>
+                                </select>
+                            </div>
+                            <div class="form-p">
+                                <input type="email" name="mail" placeholder="Courriel*" required>
+                                <input type="tel" name="telephone" placeholder="Téléphone*" required>
+                            </div>
+                            <div class="form-p">
+                                <input type="text" name="adressepostale" placeholder="Adresse postale">
+                            </div>
+                            
+                
+                    </fieldset>
+                    <fieldset>
+                        <legend>INFORMATIONS PROFESSIONNELLES</legend>
+                        <div class="form-p">
+                            <input type="text" name="nomEntreprise" placeholder="Nom de l'entreprise">
+                        </div>
+                        <div class="form-p">
+                            <input type="text" name="titrePoste" placeholder="Titre du poste">
+                        </div>
+                        <div class="form-p">
+                            <input type="text" name="secteurActivite" placeholder="Secteur d'activité">
+                        </div>
+                </fieldset>
+                <div class="mesboutons">
+                    <button type="reset" id="reset">Réinitialiser</button>
+                    <button type="submit" id="submit">Soumettre</button>
+                </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer>

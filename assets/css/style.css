@@ -223,6 +223,7 @@ nav {
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
 .event-details .signinbtn :hover{
     background-color: #163244;
@@ -274,6 +275,7 @@ th {
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
 }
 .container .Btn .signinbtn a:hover{
     background-color: #163244;
@@ -364,6 +366,7 @@ input[type="submit"] {
     padding: 10px;
     font-size: 18px;
     cursor: pointer;
+    font-weight: bold;
  /*   transition: background-color 0.3s; */
 }
 
@@ -409,8 +412,162 @@ textarea {
   
   
   
+/*          Inscription             */
+.formInscription {
+    background-color: #a2a2a2;
+    color:#000;
+    padding: 30px 100px 30px 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000033;
+}
+
+.formInscription h3 {
+    color: white;
+}
+
+.formInscription fieldset {
+    border: solid;
+    border-radius: 8px;
+    border-color: #1e3d58
+}
+.formInscription fieldset legend {
+    color:#ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+.formInscription .table-container-prix table{
+    border: none;
+    border-collapse: collapse; 
+}
+
+.formInscription form fieldset{
+    padding: 30px 100px 30px 100px;
+    margin-bottom: 30px ;
+}
+.table-container-prix td, th {
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-group-inscription {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group-inscription label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.form-group-inscription input[type="text"] {
+    text-align: right;
+    width: 20%;
+    margin-right: 10px;
+    margin-left: auto;
+}
+.formInscription form .mesboutons{
+    display: flex;
+
+}
+.formInscription form #submit {
+    align-items: center;
+    margin-top: 30px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 100px;
+    display: block;
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.formInscription form #submit:hover {
+    background-color: #163244;
+}
+.formInscription form #reset {
+    align-items: center;
+    margin-top: 30px;
+    width: 30%;
+    margin-left: 100px;
+    margin-right: auto;
+    display: block;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.formInscription form #reset:hover {
+    background-color: rgb(210, 0, 0);
+}
 
 
+/*             Intervenants             */
+
+
+.container .row .mesintervenants {
+    display: flex;
+    justify-content: space-around;
+}
+.container .row .mesintervenants .intervenant {
+    padding: 0;
+    border: solid;
+    height: 100%;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: #f1f0f0;
+}
+.container .row .mesintervenants img {
+    height: 200px;
+    border-radius: 8px;
+    background-color: #a9c0ce;
+    margin: 20px auto; 
+}
+
+.container .row .mesintervenants h3 {
+    padding: 0px 20px 0px 20px;
+}
+.container .row .mesintervenants p {
+    padding: 0px 20px 20px 20px;
+    text-align: left;
+}
+.container .row .mesintervenants .mesicones {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 50%;
+    padding: 0;
+}
+.container .row .mesintervenants .mesicones .icones{
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    padding: 0;
+    margin: 0;
+}
+.container .row .mesintervenants .mesicones .icones li {
+    color: #163244;
+    font-size: 30px;
+    list-style-type: none;
+    padding: 2px;
+    margin: 0;
+}
 
 
 
