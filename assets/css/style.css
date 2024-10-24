@@ -111,20 +111,20 @@ nav {
     vertical-align: middle;
 }
 
-.slider-title h2 {
+.slider-title h1 {
     margin-top: 0;
-    font-size: 36px;
+    font-size: 56px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .slider-title q {
-    font-size: 18px;
+    font-size: 16px;
     max-width: 70%;
 
 }
 .slider-title p{
-    font-size: 18px;
+    font-size: 16px;
     max-width: 70%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
 }
@@ -165,6 +165,7 @@ nav {
 .container, .row {
     margin: 20px 0 50px 0 ; 
     padding: 0; 
+    color: #163244;
 }
 
 
@@ -191,10 +192,12 @@ nav {
     flex-direction: column;
     border: dotted;
     height: 98%;
+    color: #163244;
    /* justify-content: space-evenly;*/
   }
   .event-details h3{
     margin: 50px 0px 20px 30px;
+    font-size: 22px;
 }
   .event-details .info {
     
@@ -298,22 +301,16 @@ nav {
 
 /*            PAGE Contact                 */
 
-
-
 .contact2 {
     margin: 0;
     background-color: #1e3d58;
-    padding: 50px;
+    padding: 30px;
     color: #ffffff;
     height: 78%;
     border-radius: 8px;
     margin-bottom: 10px;
     border-radius: 8px;
-    
 }
-
-
-
 .contact2 li {
     list-style-type: none;
     margin: 5px 0;
@@ -325,7 +322,9 @@ nav {
 .contact2 a:hover {
     color: #aeaeae;
 }
-
+.contact2 h3{
+    font-size: 22px;
+}
 
 .form {
     background-color: #a2a2a2;
@@ -333,10 +332,11 @@ nav {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px #00000033;
-    ;
+
 }
 .form h3{
     color: white;
+    font-size: 22px;
 }
 
 .form-p {
@@ -389,6 +389,10 @@ textarea {
 
 .faq {
     margin-top: 20px;
+    color: #163244;
+  }
+  .faq h3{
+    font-size: 22px;
   }
   
   details {
@@ -398,7 +402,7 @@ textarea {
   }
 
   details p{
-    padding: 15px ;
+    padding: 16px ;
     background-color: #f1f1f1;
     border-top: 1px solid #ccc;
     margin: 0;    
@@ -421,7 +425,7 @@ textarea {
   
 /*          Inscription             */
 .formInscription {
-    background-color: #a2a2a2;
+    background-color: #d4d4d4;
     color:#000;
     padding: 30px 100px 30px 100px;
     height: auto;
@@ -439,8 +443,8 @@ textarea {
     border-color: #1e3d58
 }
 .formInscription fieldset legend {
-    color:#ffffff;
-    font-size: 22px;
+    color:#163244;
+    font-size: 40px;
     font-weight: bold;
     padding-right: 5px;
     padding-left: 5px;
@@ -460,6 +464,7 @@ textarea {
     text-align: left;
     font-weight: bold;
     font-size: 16px;
+    color: #163244;
 }
 
 .form-group-inscription {
@@ -472,6 +477,7 @@ textarea {
     font-weight: bold;
     font-size: 16px;
     margin-left: 10px;
+    color: #163244;
 }
 
 .form-group-inscription input[type="text"] {
@@ -540,6 +546,9 @@ textarea {
     border-radius: 10px;
     background-color: #f1f0f0;
 }
+.container .row .col-12 h2 {
+    font-size: 40px;
+}
 .container .row .mesintervenants img {
     height: 200px;
     border-radius: 8px;
@@ -549,6 +558,7 @@ textarea {
 
 .container .row .mesintervenants h3 {
     padding: 0px 20px 0px 20px;
+    font-size: 22px;
 }
 .container .row .mesintervenants p {
     padding: 0px 20px 20px 20px;
@@ -577,6 +587,74 @@ textarea {
 }
 
 
+/*              À propos                    */
+
+.container .row .aPropos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .row .aPropos .sujets {
+    padding: 0;
+    border: solid;
+    height: 100%;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: #f1f0f0;
+}
+.container .row .aPropos .sujets img {
+    height: 200px;
+    border-radius: 8px;
+    background-color: #a9c0ce;
+    margin: 20px auto; 
+}
+.container .row .aPropos .sujets h2 {
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+    font-size: 40px;
+}
+.container .row .aPropos .sujets p {
+    padding: 0px 20px 20px 20px;
+    text-align: left;
+    font-size: 16px;
+}
+.container .row .aPropos .sujets .nosObjectifs {
+    text-align: left;
+    font-size: 16px;
+}
+
+.container .row .col-md-12 .personnesImpliquees h2 {
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+    font-size: 40px;  
+}
+.container .row .col-md-4 .personnesImpliquees {
+    padding: 0;
+    border: solid;
+    height: 100%;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: #f1f0f0;
+}
+.container .row .col-md-4 .personnesImpliquees img {
+    height: 200px;
+    border-radius: 8px;
+    background-color: #a9c0ce;
+    margin: 20px auto; 
+}
+.container .row .col-md-4 .personnesImpliquees p {
+    padding: 0px 20px 20px 20px;
+    text-align: left;
+    font-size: 16px;
+}
+.container .row .col-md-4 .personnesImpliquees h3{
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+    font-size: 22px;
+    
+}
 
 
 
@@ -673,7 +751,7 @@ footer {
 }
 
 
-.infos h5{
+.infos h3{
     color: #8a949c;
 }
 
