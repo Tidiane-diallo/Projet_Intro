@@ -1,0 +1,528 @@
+body {
+   
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*            MENU                 */
+
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #cfcfcf; 
+    padding: 5px 20px; 
+}
+
+.logo img {
+    height: 80%; 
+    width: 250px;
+    margin-right: 10px; 
+}
+
+nav {
+    padding-left: 100px;
+    flex-grow: 1; 
+}
+
+.barmenu {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #eff2f6;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 1000; /*Pour que le menu reste au-dessus des elements.... */
+}
+
+.menu {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px; 
+}
+
+.menu li a {
+    color: #000; 
+    font-weight: bold;
+    text-decoration: none; 
+    padding: 10px 15px; 
+}
+
+.menu li a:hover {
+    color: #1e3d58;
+ /*   background-color: #f0f0f0;  Couleur de fond lors du survol */
+
+}
+
+
+
+
+/*            SLIDER                 */
+
+
+
+
+.slider-container {
+    height: 800px; 
+    position: relative;
+    max-width: 100%;
+    margin: 0px auto; 
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px #00000033;
+}
+
+
+.slide img {
+    width: 100%; 
+    display: block;
+    height: auto;
+    object-fit: contain;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.overlay h2 {
+    margin-top: 0;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.overlay q {
+    font-size: 18px;
+    max-width: 70%;
+
+}
+
+
+
+
+
+
+
+
+
+/*            CONTENT       index          */
+
+
+
+.container{
+    top: 0;
+    margin-bottom: 30px;
+    padding: 10px;
+ /*   background-color: #fff;   */
+}
+
+.container p{
+    padding: 20px 100px 20px 0px;
+    font-size: 16px;
+} 
+
+.imagecontent img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    margin: 0; 
+    padding: 0; 
+    display: block; 
+}
+
+.container, .row {
+    margin: 20px 0 50px 0 ; 
+    padding: 0; 
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0; 
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2;
+  }
+
+
+  .event-details {
+    display: flex;
+    flex-direction: column;
+    border: dotted;
+    height: 98%;
+   /* justify-content: space-evenly;*/
+  }
+  .event-details h3{
+    margin: 50px 0px 20px 30px;
+}
+  .event-details .info {
+    
+    margin: 5px 0px 10px 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .event-details .info i {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+  .event-details .info del {
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+ 
+
+.event-details .signinbtn a{
+    margin-top: 30px;
+    text-decoration: none;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.event-details .signinbtn :hover{
+    background-color: #163244;
+}
+
+
+
+
+
+/*            PAGE PROGRAMME                 */
+
+
+.table-container {
+    width: 70%; 
+    margin-top: 50px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #c3c2c2;
+    font-weight: bold;
+}
+
+.container .Btn .signinbtn a{
+    margin-top: 30px;
+    text-decoration: none;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container .Btn .signinbtn a:hover{
+    background-color: #163244;
+}
+
+.container .signinbtn button i{
+   margin-right: 5px;
+}
+
+
+
+
+
+/*            PAGE Contact                 */
+
+
+
+.contact2 {
+    margin: 0;
+    background-color: #1e3d58;
+    padding: 50px;
+    color: #ffffff;
+    height: 78%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    
+}
+
+
+
+.contact2 li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+.contact2 ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.contact2 a:hover {
+    color: #aeaeae;
+}
+
+
+.form {
+    background-color: #a2a2a2;
+    padding: 30px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000033;
+    ;
+}
+.form h3{
+    color: white;
+}
+
+.form-p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 10px; /*Espacer les elements du form*/
+} 
+
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea :focus{
+    border: solid;
+    border-color: #1e3d58;
+}
+input[type="submit"] {
+    align-items: center;
+    margin-top: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+ /*   transition: background-color 0.3s; */
+}
+
+input[type="submit"]:hover {
+    background-color: #163244;
+}
+
+
+textarea {
+    min-height: 100px;
+    
+}
+
+.faq {
+    margin-top: 20px;
+  }
+  
+  details {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+  details p{
+    padding: 15px ;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    margin: 0;    
+  }
+  details .text{
+    padding-left: 15px;
+  }
+  summary {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+  
+  summary:hover {
+    background-color: #e1e1e1;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+/*            FOOTER                 */
+
+
+
+
+
+
+
+footer {
+    margin: 10px 0 0px 0; 
+    display: flex; 
+    bottom: 0;
+    border-radius: 5px;
+    justify-content: space-around; 
+  /*  align-items: center; * Centrer verticalement les éléments */
+    background-color: #1e3d58; /* Couleur de fond du footer */
+    padding: 20px 0px; 
+}
+
+.contact, .liens, .reseaux{
+    padding: 0;  /*top ,right, bottom,left*/
+    margin: 0;
+  /*  margin: 15px 100px 15px 100px;*/ 
+}
+
+
+.contact h3, .liens h3, .reseaux h3{
+    color: #d7d7d7;
+    font-size: 22px;
+}
+.contact ul, .liens ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.contact ul li i, .liens ul li i{
+    color: #f0f0f0;
+    padding: 10px 0 5px 0;
+}
+
+.contact ul span{
+    padding: 0px 5px;
+    color: #b5b5b5;
+    font-weight: bold;
+}
+
+.contact ul li a, .liens ul li a {
+    padding: 0px 5px;
+    color: #b5b5b5;
+    font-weight: bold;
+}
+
+.liens ul li a:hover{
+    color: #8a949c;
+}
+.reseaux ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.reseaux ul li{
+    color: #d7d7d7;
+    padding: 0px 10px 0px 10px;
+    font-size: 30px;
+    margin: 0;
+}
+.reseaux ul li:hover{
+    color: #8a949c;
+    
+}
+
+
+.infos h5{
+    color: #8a949c;
+}
+
+
+.infos form {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+#mail {
+    flex: 1;
+    font-size: large; 
+}
+#mail:focus{
+    border: solid;
+    border-color: red;
+}
+.BtnEnvoi {
+    border-color: red;
+    padding: 10px 20px;
+    background-color: #1e3d58;
+    color: #d7d7d7;
+    cursor: pointer;
+    font-size: large;
+}
+.BtnEnvoi:hover{
+    background-color: #163244;
+}
+footer p{
+    color: white;
+    text-align: center;
+    vertical-align: bottom;
+    text-shadow: 0px 0px 3px #00000033;
+}
