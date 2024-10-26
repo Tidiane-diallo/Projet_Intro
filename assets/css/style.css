@@ -574,14 +574,15 @@ textarea {
 .container .row .mesintervenants .mesicones .icones{
     display: flex;
     justify-content: center;
+    list-style-type: none;
     gap: 10px; 
     padding: 0;
     margin: 0;
 }
-.container .row .mesintervenants .mesicones .icones li {
+.container .row .mesintervenants .mesicones .icones li i{
     color: #163244;
     font-size: 30px;
-    list-style-type: none;
+   
     padding: 2px;
     margin: 0;
 }
@@ -687,22 +688,23 @@ textarea {
 
 
 footer {
-    margin: 10px 0 0px 0; 
-    display: flex; 
+    height: 350px;
     bottom: 0;
     border-radius: 5px;
     justify-content: space-around; 
-  /*  align-items: center; * Centrer verticalement les éléments */
-    background-color: #1e3d58; /* Couleur de fond du footer */
-    padding: 20px 0px; 
+  /*  align-items: center;  */
+    background-color: #1e3d58; 
+    padding: 10px 0; 
 }
-
+footer .container .row > div {
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
 .contact, .liens, .reseaux{
     padding: 0;  /*top ,right, bottom,left*/
     margin: 0;
-  /*  margin: 15px 100px 15px 100px;*/ 
+/*  margin: 15px 100px 15px 100px;*/ 
 }
-
 
 .contact h3, .liens h3, .reseaux h3{
     color: #d7d7d7;
@@ -711,6 +713,7 @@ footer {
 .contact ul, .liens ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
 .contact ul li i, .liens ul li i{
@@ -736,8 +739,8 @@ footer {
 .reseaux ul{
     list-style-type: none;
     display: flex;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 .reseaux ul li{
     color: #d7d7d7;
@@ -786,4 +789,10 @@ footer p{
     text-align: center;
     vertical-align: bottom;
     text-shadow: 0px 0px 3px #00000033;
+}
+
+footer p {
+    color: #6c757d; 
+    font-size: 14px;
+    margin-top: 0px;
 }
