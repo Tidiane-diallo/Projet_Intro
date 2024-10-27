@@ -742,13 +742,13 @@ footer .container .row > div {
     margin: 0;
     padding: 0;
 }
-.reseaux ul li{
+.reseaux ul li a{
     color: #d7d7d7;
     padding: 0px 10px 0px 10px;
     font-size: 30px;
     margin: 0;
 }
-.reseaux ul li:hover{
+.reseaux ul li a:hover{
     color: #8a949c;
     
 }
